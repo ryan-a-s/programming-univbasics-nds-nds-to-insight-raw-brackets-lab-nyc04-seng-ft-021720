@@ -15,12 +15,12 @@ def directors_totals(nds)
   while outer_index < nds.length do
     total = 0
     inner_index = 0
-    while inner_index < nds[outer_index][:movies].length do
+    while inner_index < nds[outer_index][:movies][inner_index][:worldwide_gross].length do
       total += nds[outer_index][:movies][inner_index][:worldwide_gross]
-    inner_index += 1
+      inner_index += 1
     end
-  result = {"#{nds[outer_index][:name]}" => "#{total}"}
-  outer_index += 1
+    result = {"#{nds[outer_index][:name]}" => "#{total}"}
+    outer_index += 1
   end
   #
   # Use loops, variables and the accessing method, [], to loop through the NDS
