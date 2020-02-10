@@ -20,7 +20,7 @@ def directors_totals(nds)
       total += movie_gross.to_i
       inner_index += 1
     end
-    result.merge![director] = total
+    result[director] = total
     outer_index += 1
   end
   #
