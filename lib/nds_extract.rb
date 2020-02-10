@@ -12,6 +12,7 @@ def directors_totals(nds)
   result = {
   }
   outer_index = 0
+  pp nds[0][:movies][0]
   while outer_index < nds.length do
     inner_index = 0
     total = 0
