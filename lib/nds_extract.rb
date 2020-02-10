@@ -2,6 +2,7 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 
 def directors_totals(nds)
+  pp nds[0]
   # Remember, it's always OK to pretty print what you get *in* to make sure
   # that you know what you're starting with!
   #
@@ -18,7 +19,7 @@ def directors_totals(nds)
       total += movie_gross
       inner_index += 1
     end
-    result[nds][:name] = total
+    result = total
     outer_index += 1
     puts result
   end
