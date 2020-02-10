@@ -19,7 +19,7 @@ def directors_totals(nds)
       total += nds[outer_index][:movies][inner_index][:worldwide_gross]
       inner_index += 1
     end
-    result = "#{nds[outer_index][:name]} => #{total}"
+    result = '"#{nds[outer_index][:name]}" => #{total}'
     outer_index += 1
   end
   #
