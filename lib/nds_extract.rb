@@ -20,6 +20,7 @@ def directors_totals(nds)
     end
     result[nds]["#{outer_index}"] = total
     outer_index += 1
+    puts result
   end
   #
   # Use loops, variables and the accessing method, [], to loop through the NDS
