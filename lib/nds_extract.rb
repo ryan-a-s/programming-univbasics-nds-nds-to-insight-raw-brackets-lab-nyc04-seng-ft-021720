@@ -18,7 +18,7 @@ def directors_totals(nds)
       total += movie_gross
       inner_index += 1
     end
-    result[nds["#{outer_index.to_s}"]] = total
+    result[nds["#{outer_index}.to_s"]] = total
     outer_index += 1
     puts result
   end
