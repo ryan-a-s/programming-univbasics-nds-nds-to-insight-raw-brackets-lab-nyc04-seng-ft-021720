@@ -21,7 +21,7 @@ def directors_totals(nds)
       inner_index += 1
     end
     result = {"#{nds[outer_index][:name]}" => total}
-    puts result
+    pp result
     outer_index += 1
   end
   #
