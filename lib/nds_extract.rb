@@ -19,6 +19,7 @@ def directors_totals(nds)
       movie_gross = nds[outer_index][:movies][inner_index][:worldwide_gross].to_i
       total += movie_gross
       inner_index += 1
+      puts movie_gross
     end
     result = {"#{nds[outer_index][:name]}" => total}
     pp result
