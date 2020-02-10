@@ -8,7 +8,6 @@ def directors_totals(nds)
   #
   #
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
-  pp nds
   result = {
   }
   outer_index = 0
@@ -19,7 +18,6 @@ def directors_totals(nds)
       movie_gross = nds[outer_index][:movies][inner_index][:worldwide_gross].to_i
       total += movie_gross
       inner_index += 1
-      puts movie_gross
     end
     result = {"#{nds[outer_index][:name]}" => total}
     pp result
